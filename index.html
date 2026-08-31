@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ganpati Bappa Agman</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+    background: url("C:\Users\Admin\OneDrive\Desktop\htmlflie\ganpati photo.jpg") center/cover fixed no-repeat;
+    color: #5a2100;
+    text-align: center;
+}
+        
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #ff0000, #f83737);
+            color: white;
+            padding: 18px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h2 {
+            font-size: 25px;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 15px;
+            background:
+                radial-gradient(circle at top, #ffe082, #fff7e6 60%);
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .ganesh {
+            font-size: 90px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #d84315;
+            margin-bottom: 10px;
+        }
+
+        .hero h3 {
+            font-size: 25px;
+            color: #8d2600;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 28px;
+            background: #e65100;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #bf360c;
+            transform: scale(1.05);
+        }
+
+        /* Event */
+        .event {
+            padding: 60px 20px;
+        }
+
+        .event h2 {
+            font-size: 35px;
+            color: #d84315;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 250px;
+            padding: 25px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+        }
+
+        .card .icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            color: #e65100;
+            margin-bottom: 10px;
+        }
+
+        /* Countdown */
+        .countdown {
+            background: #ff6a00;
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .countdown h2 {
+            margin-bottom: 25px;
+            font-size: 32px;
+        }
+
+        #timer {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 50px 20px;
+        }
+
+        .contact h2 {
+            color: #d84315;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background: #4e1b00;
+            color: white;
+            padding: 20px;
+        }
+
+        @media(max-width:600px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .ganesh {
+                font-size: 70px;
+            }
+
+            .hero h3 {
+                font-size: 20px;
+            }
+
+            #timer {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>🙏 Ganpati Bappa Agman 🙏</h2>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <div class="ganesh"></div>
+        <div class="logo">
+    <img src="C:\Users\Admin\OneDrive\Desktop\htmlflie\KP LOGO.png" 
+         alt="KP Group Logo" 
+         width="700" 
+         height="700">
+</div>
+            <h1>Ganpati Bappa Morya</h1>
+            
+            <h1> KP Group </h1>
+
+            <h3>🌺 શુભ ગણપતિ બાપ્પા આગમન 🌺</h3>
+
+            <p>
+                તમારી ઉપસ્થિતિ અમારા માટે સૌભાગ્યની વાત હશે.
+            </p>
+
+
+        </div>
+    </section>
+
+
+    <section class="event" id="event">
+
+        <h2>🌸 Event Details 🌸</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">📅</div>
+                <h3>Date</h3>
+                <p>12 September</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⏰</div>
+                <h3>Time</h3>
+                <p>7:00 PM</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📍</div>
+                <h3>Venue</h3>
+                <p>SMC Community Hall<br>Mota Varachha, Surat</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="countdown">
+
+        <h2>🕉️ Bappa's Arrival Countdown 🕉️</h2>
+
+        <div id="timer">
+            Loading...
+        </div>
+
+    </section>
+
+
+    <section class="contact">
+
+        <h2>🙏 Join Us 🙏</h2>
+
+        <p>
+            Come and celebrate the arrival of Ganpati Bappa
+            with family and friends.
+        </p>
+
+        <br>
+
+        <a class="btn" href="https://maps.google.com/?q=SMC+Community+Hall+Mota+Varachha+Surat"
+           target="_blank">
+            📍 View Location
+        </a>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 Ganpati Bappa Agman | Ganpati Bappa Morya 🙏</p>
+    </footer>
+
+
+    <script>
+
+        // Change this date if required
+        const eventDate = new Date("September 12, 2026 19:00:00").getTime();
+
+        const timer = setInterval(function () {
+
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+
+            if (distance <= 0) {
+                document.getElementById("timer").innerHTML =
+                    "🎉 Bappa Has Arrived! Ganpati Bappa Morya! 🙏";
+
+                clearInterval(timer);
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor(
+                (distance % (1000 * 60 * 60 * 24)) /
+                (1000 * 60 * 60)
+            );
+
+            const minutes = Math.floor(
+                (distance % (1000 * 60 * 60)) /
+                (1000 * 60)
+            );
+
+            const seconds = Math.floor(
+                (distance % (1000 * 60)) / 1000
+            );
+
+            document.getElementById("timer").innerHTML =
+                days + " Days " +
+                hours + " Hours " +
+                minutes + " Minutes " +
+                seconds + " Seconds";
+
+        }, 1000);
+
+    </script>
+
+</body>
+</html>
